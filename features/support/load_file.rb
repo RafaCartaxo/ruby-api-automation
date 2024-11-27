@@ -4,7 +4,7 @@ module LoadFile
   end
 
   def load_data_file(nome_arquivo)
-    data_file = File.read("#{Dir.pwd}/features/support/data#{nome_arquivo}.json")
+    data_file = File.read("#{Dir.pwd}/features/support/data/#{nome_arquivo}.json")
     JSON.parse(data_file)
   end
 end

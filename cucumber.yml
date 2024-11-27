@@ -1,5 +1,5 @@
 # Scripts para execução
-default: -p pretty -p ci -p allure_report -p TAG_ENV -p debug --publish-quiet
+default: -p pretty -p ci -p TAG_ENV -p debug --publish-quiet
 TAG_ENV: ENVIRONMENT_TYPE=homol
 pretty: --format pretty
 ci: --format progress
