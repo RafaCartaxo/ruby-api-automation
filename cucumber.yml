@@ -1,0 +1,11 @@
+# Scripts para execução
+default: -p pretty -p ci -p TAG_ENV -p debug --publish-quiet
+TAG_ENV: ENVIRONMENT_TYPE=homol
+pretty: --format pretty
+ci: --format progress
+debug: DEBUG=true
+
+#Reports
+#allure_report: --format AllureCucumber::CucumberFormatter --out allure-results
+#html_report:  --format html --out=relatorios/report.html
+#json_report: --format json --out=relatorios/report.json
