@@ -11,11 +11,16 @@ class ManipulateDate < CommunicationApi
   include LoadFile
   include Utils
 
-  def create_users
+  def create_valid_users
     data = load_data_file('user')
     data['firstName'] = first_name
     data['lastName'] = last_name
     data
+  end
+
+  def create_invalid_users
+    data = load_data_file('user')
+    data['firstName'] = "A".ljust(1000000, "A")
   end
 
   def users(data)
