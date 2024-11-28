@@ -11,6 +11,18 @@ class ManipulateDate < CommunicationApi
   include LoadFile
   include Utils
 
+  def consult_users
+    url_consult_users = load_env_file['url']['url_users']
+    request = build_get(url_consult_users)
+    p request
+  end
+
+  def users(data)
+    url_users = load_env_file['url']['url_users']
+    request = build_post(data, url_users)
+    p request
+  end
+
   def create_valid_users
     data = load_data_file('user')
     data['firstName'] = first_name
@@ -23,10 +35,18 @@ class ManipulateDate < CommunicationApi
     data['firstName'] = "A".ljust(1000000, "A")
   end
 
-  def users(data)
-    url_users = load_env_file['url']['url_users']
-    request = build_post(data, url_users)
+  def update_users(data)
+    url_update_users = load_env_file['url']['url_update_users']
+                         .gsub('{id_user}', numbers.to_s)
+    request = build_put(data, url_update_users)
     p request
+  end
+
+  def update_valid_users
+    data = load_data_file('user')
+    data['firstName'] = 'João'
+    data['lastName'] = 'Teste'
+    data
   end
 
 end
