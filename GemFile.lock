@@ -1,0 +1,103 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.8.6)
+      public_suffix (>= 2.0.2, < 6.0)
+    ast (2.4.2)
+    bigdecimal (3.1.7)
+    builder (3.2.4)
+    concurrent-ruby (1.2.3)
+    cucumber (9.1.0)
+      builder (~> 3.2, >= 3.2.4)
+      cucumber-ci-environment (~> 9.2, >= 9.2.0)
+      cucumber-core (~> 12.0)
+      cucumber-cucumber-expressions (~> 17.0)
+      cucumber-gherkin (>= 24, < 27)
+      cucumber-html-formatter (~> 20.4, >= 20.4.0)
+      cucumber-messages (>= 19, < 23)
+      diff-lcs (~> 1.5, >= 1.5.0)
+      mini_mime (~> 1.1, >= 1.1.5)
+      multi_test (~> 1.1, >= 1.1.0)
+      sys-uname (~> 1.2, >= 1.2.3)
+    cucumber-ci-environment (9.2.0)
+    cucumber-core (12.0.0)
+      cucumber-gherkin (>= 25, < 27)
+      cucumber-messages (>= 20, < 23)
+      cucumber-tag-expressions (~> 5.0, >= 5.0.4)
+    cucumber-cucumber-expressions (17.1.0)
+      bigdecimal
+    cucumber-gherkin (26.2.0)
+      cucumber-messages (>= 19.1.4, < 22.1)
+    cucumber-html-formatter (20.4.0)
+      cucumber-messages (>= 18.0, < 22.1)
+    cucumber-messages (22.0.0)
+    cucumber-tag-expressions (5.0.6)
+    diff-lcs (1.5.1)
+    faker (3.3.1)
+      i18n (>= 1.8.11, < 2)
+    ffi (1.16.3-x64-mingw-ucrt)
+    httparty (0.21.0)
+      mini_mime (>= 1.0.0)
+      multi_xml (>= 0.5.2)
+    i18n (1.14.4)
+      concurrent-ruby (~> 1.0)
+    json (2.7.2)
+    json-schema (4.3.0)
+      addressable (>= 2.8)
+    jsonpath (1.1.5)
+      multi_json
+    mini_mime (1.1.5)
+    multi_json (1.15.0)
+    multi_test (1.1.0)
+    multi_xml (0.6.0)
+    parallel (1.20.1)
+    parser (3.0.1.0)
+      ast (~> 2.4.1)
+    public_suffix (5.0.5)
+    rainbow (3.0.0)
+    regexp_parser (2.8.3)
+    rexml (3.2.6)
+    rspec (3.13.0)
+      rspec-core (~> 3.13.0)
+      rspec-expectations (~> 3.13.0)
+      rspec-mocks (~> 3.13.0)
+    rspec-core (3.13.0)
+      rspec-support (~> 3.13.0)
+    rspec-expectations (3.13.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.13.0)
+    rspec-mocks (3.13.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.13.0)
+    rspec-support (3.13.1)
+    rubocop (1.12.1)
+      parallel (~> 1.10)
+      parser (>= 3.0.0.0)
+      rainbow (>= 2.2.2, < 4.0)
+      regexp_parser (>= 1.8, < 3.0)
+      rexml
+      rubocop-ast (>= 1.2.0, < 2.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (>= 1.4.0, < 3.0)
+    rubocop-ast (1.4.1)
+      parser (>= 2.7.1.5)
+    ruby-progressbar (1.11.0)
+    sys-uname (1.2.3)
+      ffi (~> 1.1)
+    unicode-display_width (2.0.0)
+
+PLATFORMS
+  x64-mingw-ucrt
+
+DEPENDENCIES
+  cucumber
+  faker
+  httparty
+  json
+  json-schema
+  jsonpath
+  rspec
+  rubocop
+
+BUNDLED WITH
+   2.5.6
